@@ -1,0 +1,95 @@
+.container{
+  
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .Comment{
+    border-color: black;
+    border: solid;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    
+    margin: 2em 25% 5em 25%;
+  }
+  
+  .Comment a{
+    margin: 6%;
+  }
+  
+  .Comment button{
+    border-color: black;
+    margin: 2%;
+    width: 20%;
+    height: 10%;
+  }
+  .navbar1 {
+    background-color: #941701;
+   
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    height: 50px;
+  }
+  
+  
+  .navbar {
+    background-color:#C9C9C9 ;
+    
+    height: 100px;
+  
+  }
+  
+  
+  .body{
+    background-color: #8d8b8b;
+  }
+  .basdepage{
+    margin-top: 30px;
+    
+  }
+  
+  .profile{
+    flex-flow: column;
+    background-color: white;
+    display: flex;
+    background-color: #8d8b8b;
+  }
+  
+  .cadre{
+    border: solid;
+    background-color: #C9C9C9 ;
+    
+    flex-flow: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+  }
+  
+  
+  .titre{
+    font-size: x-large;
+    font-style: normal;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  .Biographie{
+    
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 10%;
+    font-size: 18px;
+  }
+  .Biographie a{
+    flex: 0 0 50%;
+    margin-bottom: 5%;
+  }
+  
+  #Bouton{
+    color: black;
+  }

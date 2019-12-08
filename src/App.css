@@ -27,7 +27,7 @@
 }
 .navbar1 {
   background-color: #941701;
-  display: flex;
+ 
   text-align: center;
   font-size: xx-large;
   color: white;
@@ -37,8 +37,8 @@
 
 .navbar {
   background-color:#C9C9C9 ;
-  display: flex;
-  height: 70px;
+  
+  height: 100px;
 
 }
 
@@ -48,6 +48,7 @@
 }
 .basdepage{
   margin-top: 30px;
+  
 }
 
 .profile{
@@ -60,7 +61,7 @@
 .cadre{
   border: solid;
   background-color: #C9C9C9 ;
-  display: flex;
+  
   flex-flow: column;
   margin-left: 25%;
   margin-right: 25%;
@@ -77,7 +78,7 @@
 
 
 .Biographie{
-  display: flex;
+  
   flex-flow: row wrap;
   align-items: center;
   padding-top: 5%;

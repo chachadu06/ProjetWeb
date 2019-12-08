@@ -1,33 +1,50 @@
-import React from "react";
-import Popup from "reactjs-popup";
-import NavBar2 from "./NavBar2";
-import NavBar1 from "./NavBar1";
-import NavBar3 from "./NavBar3";
-import "./Nav.css";
 
-const styles = {
-    fontFamily: "sans-serif",
-    textAlign: "center",
-    marginTop: "40px"
-};
-const contentStyle = {
-    background: "rgba(255,255,255,0",
-    width: "80%",
-    border: "none"
-};
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
-const Nav = () => (
-    <div style={styles}>
-        <Popup
-            modal
-            overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-            contentStyle={contentStyle}
-            closeOnDocumentClick={false}
-            trigger={open => <NavBar1 open={open} />}
-        >
-            {close => <NavBar3 close={close} />}
-        </Popup>
+
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
+
+const Example = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div className="louis">
+      <Navbar color="black" light expand="lg">
+        <NavbarBrand href="/"></NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+                <Link to ="/">Home</Link>
+            </NavItem>
+            
+            <NavItem>
+                
+                <Link to ="/formulaire">Formulaire</Link>
+            </NavItem>
+            
+          </Nav>
+          
+        </Collapse>
+      </Navbar>
     </div>
-);
+  );
+}
 
-export default Nav;
+export default Example;
