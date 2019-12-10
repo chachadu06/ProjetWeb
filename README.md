@@ -5,3 +5,4 @@ en revanche dans notre back nous sommes connectés à la base de donnée et nous
 fonctionnent 
 Louis n'a pas pu commit la plupart de son travail à cause d'un problème avec git 
 c'est pour cela que les commit ont été majoritairement fait à partir de l'ordinateur de charlotte 
+lien pour loom : https://www.loom.com/share/1f29291cea77499d9ce6c778e42accab
