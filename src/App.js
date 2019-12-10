@@ -15,16 +15,8 @@ import Routes from './route';
 import Example from './components/NavBar/Nav';
 
 
-import { Button, Col, Row} from 'reactstrap';
-
-
-
-
-
-
 class Container extends React.Component{
   
-
   render() {
     return(
         

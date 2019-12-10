@@ -2,6 +2,42 @@ import React, { PureComponent } from 'react';
 import {
     PieChart, Pie, Sector, Cell,
 } from 'recharts';
+import axios from 'axios';
+
+axios.get('http://localhost:3000/user')
+
+
+ 
+        .then(response => {
+
+ 
+            this.setState({pays : response.data.message});
+
+
+ 
+        })
+
+
+ 
+        .catch(function (error) {
+
+
+ 
+
+
+
+ 
+            console.log(error);
+
+
+        });
+
+ 
+
+
+
+ 
+    
 
 const data = [
     { name: 'Group A', value: 400 },

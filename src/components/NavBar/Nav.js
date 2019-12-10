@@ -36,8 +36,10 @@ const Example = (props) => {
             
             <NavItem>
                 
-                <Link to ="/formulaire">Formulaire</Link>
+                <Link to ="/admin">Formulaire</Link>
             </NavItem>
+
+            
             
           </Nav>
           
