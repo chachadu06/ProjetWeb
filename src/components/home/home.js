@@ -22,6 +22,7 @@ class NavBar extends React.Component {
                     </Col>
                 </Row>
             </div>
+            <h1>test</h1>
 
 
         );
