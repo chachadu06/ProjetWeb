@@ -10,25 +10,23 @@ const colors = ['#FFABAB','#FF7F7F', '#FF3C3C','FF1212','#DC3434','#941701','red
 
 const data = [
   {
-    name: 'Page A', uv: 4000, female: 2400, male: 2400,
+    name: 'Chine', uv: 4000, female: 2400, male: 2400,
   },
   {
-    name: 'Page B', uv: 3000, female: 1398, male: 2210,
+    name: 'Russie', uv: 3000, female: 1398, male: 2210,
   },
   {
-    name: 'Page C', uv: 2000, female: 9800, male: 2290,
+    name: 'Poland', uv: 2000, female: 9800, male: 2290,
   },
   {
-    name: 'Page D', uv: 2780, female: 3908, male: 2000,
+    name: 'Italie', uv: 2780, female: 3908, male: 2000,
   },
   {
-    name: 'Page E', uv: 1890, female: 4800, male: 2181,
+    name: 'Grece', uv: 1890, female: 4800, male: 2181,
   },
+  
   {
-    name: 'Page F', uv: 2390, female: 3800, male: 2500,
-  },
-  {
-    name: 'Page G', uv: 3490, female: 4300, male: 2100,
+    name: 'Equateur', uv: 3490, female: 4300, male: 2100,
   },
 ];
 

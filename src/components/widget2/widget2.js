@@ -4,33 +4,33 @@ import {
 } from 'recharts';
 import axios from 'axios';
 
-axios.get('http://localhost:3000/user')
+// axios.get('http://localhost:3000/users')
 
 
  
-        .then(response => {
+//         .then(response => {
 
  
-            this.setState({pays : response.data.message});
-
-
- 
-        })
-
+//          this.setState({pays : response.data.message});
+//            console.log(a)
 
  
-        .catch(function (error) {
+//         })
 
 
  
+//         .catch(function (error) {
+
+
+ 
 
 
 
  
-            console.log(error);
+//             console.log(error);
 
 
-        });
+//         });
 
  
 
@@ -43,7 +43,7 @@ const data = [
     { name: 'Group A', value: 400 },
     { name: 'Group B', value: 300 },
     { name: 'Group C', value: 300 },
-    { name: 'Group D', value: 200 },
+    
 ];
 
 const COLORS = ['#941701', '#DC3434', '#8d8b8b', '#C9C9C9'];

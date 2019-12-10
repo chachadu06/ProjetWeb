@@ -5,25 +5,25 @@ import {
 
 const data = [
     {
-        name: 'Page A', uv: 4000, pv: 2400, amt: 2400, 
+        name: 'User 1', temperature: 4000, humidite: 2400, amt: 2400, 
     },
     {
-        name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
+        name: 'User 2', temperature: 3000, humidite: 1398, amt: 2210,
     },
     {
-        name: 'Page C', uv: 2000, pv: 9800, amt: 2290,
+        name: 'User 3', temperature: 2000, humidite: 9800, amt: 2290,
     },
     {
-        name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
+        name: 'User 4', temperature: 2780, humidite: 3908, amt: 2000,
     },
     {
-        name: 'Page E', uv: 1890, pv: 4800, amt: 2181,
+        name: 'User 5', temperature: 1890, humidite: 4800, amt: 2181,
     },
     {
-        name: 'Page F', uv: 2390, pv: 3800, amt: 2500,
+        name: 'User 6', temperature: 2390, humidite: 3800, amt: 2500,
     },
     {
-        name: 'Page G', uv: 3490, pv: 4300, amt: 2100,
+        name: 'User 7', temperature: 3490, humidite: 4300, amt: 2100,
     },
 ];
 
@@ -48,8 +48,8 @@ export default class Widget1 extends PureComponent {
       
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="pv" stroke="#941701" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="uv" stroke="white" />
+                <Line type="monotone" dataKey="temperature" stroke="#941701" activeDot={{ r: 8 }} />
+                <Line type="monotone" dataKey="humidite" stroke="white" />
             </LineChart>
         );
     }

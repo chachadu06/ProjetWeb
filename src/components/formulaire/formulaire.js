@@ -45,8 +45,15 @@ class Formulaire extends React.Component{
     event.preventDefault();
   }
 
-  
-
+  handleChange_location = (event) => {
+    this.setState({location: event.target.value});
+  }
+  handleChange_nbpersonne = (event) => {
+    this.setState({nbpersonne: event.target.value});
+  }
+  handleChange_taille = (event) => {
+    this.setState({taille: event.target.value});
+  }
   render() {
     return(
         <body className="Container">
@@ -67,7 +74,7 @@ class Formulaire extends React.Component{
         <Col md={6}>
           <FormGroup>
             <Label for="localisation">Localisation</Label>
-            <Input type="text" name="localisation" id="localisation" placeholder="localisation" />
+            <Input type="text" name="localisation" id="localisation" placeholder="localisation" onChange={this.handleChange_location} />
           </FormGroup>
         </Col> 
       </Row>
@@ -75,7 +82,7 @@ class Formulaire extends React.Component{
         <Col md={6}>
           <FormGroup>
             <Label for="nbperonne">Nombre de personne dans la maison</Label>
-            <Input type="text" name="nbpersonne" id="nbpersonne" placeholder="Nombre de personne dans la maison" />
+            <Input type="text" name="nbpersonne" id="nbpersonne" placeholder="Nombre de personne dans la maison" onChange={this.handleChange_nbpersonne} />
           </FormGroup>
         </Col>
       </Row>
@@ -83,7 +90,7 @@ class Formulaire extends React.Component{
       <Col md={6}>
       <FormGroup>
         <Label for="taille">Taille de la maison</Label>
-        <Input type="text" name="taille" id="taille" placeholder="Taille de la maison"/>
+        <Input type="text" name="taille" id="taille" placeholder="Taille de la maison" onChange={this.handleChange_taille}/>
       </FormGroup>
       </Col>
       </Row>

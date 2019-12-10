@@ -34,17 +34,17 @@ class Home extends React.Component {
         this.state = {
             profile: [
                 {
-                    nom: "Humidité",
+                    nom: "Widget 1",
                     graph: <Widget1 />,
 
                 },
                 {
-                    nom: "Température",
+                    nom: "Widget 2",
                     graph: <Widget2 />,
 
                 },
                 {
-                    nom: "Pollution de l'air",
+                    nom: "Widget 3",
                     graph: <Widget3 />,
 
                 },
@@ -115,32 +115,32 @@ class Home extends React.Component {
                 <div className="body">
                     <div className="profile">
                         <Profile
-                            nom={this.state.profile[this.state.show_profile].nom}
+                            
                             graph={this.state.profile[this.state.show_profile].graph}
                         />
                     </div>
                     <div className="basdepage">
                         <Row>
                             <Col xs="6" sm="4">
-                                <div className="titre">Humidité</div>
+                                <div className="titre">Humidité et Température en fonction des utilisateurs</div>
                                 <Widget1 /></Col>
                             <Col xs="6" sm="3">
-                                <div className="titre">Température</div>
+                                <div className="titre">Nombre de capteurs en fonction des différents paramètres</div>
                                 <Widget2 /></Col>
                             <Col sm="5">
-                                <div className="titre">Pollution de l'air </div>
+                                <div className="titre">Moyenne Température en fonction du nombre personnes présentes </div>
                                 <Widget3 /></Col>
                         </Row>
 
                         <Row>
                             <Col xs="6" sm="4">
-                                <div className="titre">Widget 4 </div>
+                                <div className="titre">Nombre d'utilisateurs par pays </div>
                                 <Widget4 /></Col>
                             <Col xs="6" sm="4">
-                                <div className="titre">Widget 5 </div>
+                                <div className="titre">Nombre de capteurs en fonctions des différentes pièces </div>
                                 <Widget5 /></Col>
                             <Col sm="4">
-                                <div className="titre">Widget 6</div>
+                                <div className="titre">Pollution de l'air en fonction du pays</div>
                                 <Widget6 /></Col>
                         </Row>
 

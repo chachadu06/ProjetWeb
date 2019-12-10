@@ -1,40 +1,43 @@
 import React, { PureComponent } from 'react';
 import {
-  ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Legend,
+  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
 } from 'recharts';
 
-const data01 = [
-  { x: 100, y: 200, z: 200 }, { x: 120, y: 100, z: 260 },
-  { x: 170, y: 300, z: 400 }, { x: 140, y: 250, z: 280 },
-  { x: 150, y: 400, z: 500 }, { x: 110, y: 280, z: 200 },
-];
-const data02 = [
-  { x: 200, y: 260, z: 240 }, { x: 240, y: 290, z: 220 },
-  { x: 190, y: 290, z: 250 }, { x: 198, y: 250, z: 210 },
-  { x: 180, y: 280, z: 260 }, { x: 210, y: 220, z: 230 },
+const data = [
+  {
+    name: 'Chine', pollution: 4000, 
+  },
+  {
+    name: 'Russie', pollution: 3000,
+  },
+  {
+    name: 'Italie', pollution: 2000, 
+  },
+  {
+    name: 'Grece', pollution: 2780, 
+  },
+  
 ];
 
-export default class Widget6 extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/3mw50Lc9/';
+export default class Example extends PureComponent {
+  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/Lrffmzfc/';
 
   render() {
     return (
-      <ScatterChart
-        width={400}
+      <AreaChart
+        width={500}
         height={400}
+        data={data}
         margin={{
-          top: 20, right: 20, bottom: 20, left: 20,
+          top: 10, right: 30, left: 0, bottom: 0,
         }}
       >
-        <CartesianGrid />
-        <XAxis type="number" dataKey="x" name="stature" unit="cm" stroke="white" />
-        <YAxis type="number" dataKey="y" name="weight" unit="kg" stroke="white" />
-        <ZAxis type="number" dataKey="z" range={[60, 400]} name="score" unit="km" stroke="white" />
-        <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-        <Legend />
-        <Scatter name="A school" data={data01} fill="#941701" shape="star" />
-        <Scatter name="B school" data={data02} fill="white" shape="triangle" />
-      </ScatterChart>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Area type="monotone" dataKey="pollution" stroke="red" fill="red" />
+      </AreaChart>
     );
   }
 }
