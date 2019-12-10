@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react';
+import {ResponsiveContainer,} from 'recharts';
+
 import {
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
 } from 'recharts';
@@ -59,12 +61,16 @@ export default class Widget3 extends PureComponent {
 
   render() {
     return (
-      <RadarChart cx={300} cy={250} outerRadius={150} width={600} height={500} data={data}>
+      <ResponsiveContainer aspect="1.5">
+      <RadarChart
+       //cx={300} cy={250} 
+       outerRadius={150} width={600} height={500} data={data}>
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" stroke="white" />
         <PolarRadiusAxis />
         <Radar name="Mike" dataKey="A" stroke="#941701" fill="#941701" fillOpacity={0.6} />
       </RadarChart>
+      </ResponsiveContainer>
     );
   }
 }

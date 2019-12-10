@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import {ResponsiveContainer,} from 'recharts';
 import PropTypes from 'prop-types';
 import {
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
@@ -56,6 +57,7 @@ export default class Widget4 extends PureComponent {
 
   render() {
     return (
+      <ResponsiveContainer aspect="1.5">
       <BarChart
         width={500}
         height={400}
@@ -75,6 +77,7 @@ export default class Widget4 extends PureComponent {
           }
         </Bar>
       </BarChart>
+      </ResponsiveContainer>
     );
   }
 }

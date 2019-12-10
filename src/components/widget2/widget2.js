@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import {ResponsiveContainer,} from 'recharts';
 import {
     PieChart, Pie, Sector, Cell,
 } from 'recharts';
@@ -68,11 +69,12 @@ class Widget2 extends PureComponent {
 
     render() {
         return (
+            <ResponsiveContainer aspect="1.5">
             <PieChart width={400} height={400}>
                 <Pie
                     data={data}
-                    cx={200}
-                    cy={200}
+                    //cx={200}
+                    //cy={200}
                     labelLine={false}
                     label={renderCustomizedLabel}
                     outerRadius={80}
@@ -84,6 +86,7 @@ class Widget2 extends PureComponent {
                     }
                 </Pie>
             </PieChart>
+            </ResponsiveContainer>
         );
     }
 }

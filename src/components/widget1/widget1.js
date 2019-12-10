@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import {
-    LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+    LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,ResponsiveContainer,
+
 } from 'recharts';
 
 const data = [
@@ -32,6 +33,7 @@ export default class Widget1 extends PureComponent {
 
     render() {
         return (
+            <ResponsiveContainer aspect="1.5">
             <LineChart
                 width={500}
                 height={400}
@@ -51,6 +53,7 @@ export default class Widget1 extends PureComponent {
                 <Line type="monotone" dataKey="temperature" stroke="#941701" activeDot={{ r: 8 }} />
                 <Line type="monotone" dataKey="humidite" stroke="white" />
             </LineChart>
+            </ResponsiveContainer>
         );
     }
 }

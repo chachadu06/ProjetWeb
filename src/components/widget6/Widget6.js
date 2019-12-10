@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import {ResponsiveContainer,} from 'recharts';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
 } from 'recharts';
@@ -24,6 +25,7 @@ export default class Example extends PureComponent {
 
   render() {
     return (
+      <ResponsiveContainer aspect="1.5">
       <AreaChart
         width={500}
         height={400}
@@ -38,6 +40,7 @@ export default class Example extends PureComponent {
         <Tooltip />
         <Area type="monotone" dataKey="pollution" stroke="red" fill="red" />
       </AreaChart>
+      </ResponsiveContainer>
     );
   }
 }

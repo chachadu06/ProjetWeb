@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import {ResponsiveContainer,} from 'recharts';
 import {
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine,
 } from 'recharts';
@@ -24,6 +25,7 @@ export default class Widget5 extends PureComponent {
 
   render() {
     return (
+      <ResponsiveContainer aspect="1.5">
       <BarChart
         width={500}
         height={400}
@@ -41,6 +43,7 @@ export default class Widget5 extends PureComponent {
         <Bar dataKey="capteurs" fill="white" />
         
       </BarChart>
+      </ResponsiveContainer>
     );
   }
 }

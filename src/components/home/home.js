@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './home.css';
 import Widget1 from '../widget1/widget1';
 import Widget2 from '../widget2/widget2';
@@ -22,7 +23,6 @@ class NavBar extends React.Component {
                     </Col>
                 </Row>
             </div>
-            <h1>test</h1>
 
 
         );
